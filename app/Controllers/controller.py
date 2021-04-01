@@ -218,7 +218,7 @@ class Controller:
         Create a flake8 report at the root of the program.
         """
         os.system("cd ..")
-        os.system("flake8 --format=html --htmldir=flake8_report --max-line-length=119")
+        os.system("flake8 --exclude=env,venv --format=html --htmldir=flake8_report --max-line-length=119")
 
     @staticmethod
     def list_commands():
