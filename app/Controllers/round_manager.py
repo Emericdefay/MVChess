@@ -1,22 +1,36 @@
 import datetime
-from operator import attrgetter
+from operator import itemgetter
 
-from app.Models import Round
 from app.Models import Tournament
+from app.Models import Round
 from app.Models import Match
+from app.Models import Player
 from .match_manager import MatchManager
 
 
 class RoundManager:
+    """
+    Manage the Rounds Objects.)
+    """
+
     def __init__(self):
+        """
+        Initialize the RoundManager
+        """
         pass
 
     def create_round(self, id_round):
+        """
+        Create a new round for a tournament.
+
+        Arg:
+            * *id_round* (str): ID of the round
+        """
         if not Round.get(id_round):
             id_tournament = id_round.split(":")[0]
             times = self.get_times(id_tournament)
 
-            name_round = f"Round {id_round}"
+            name_round = f"Round {id_round.split(':')[1]}"
             begin_time = times[0]
             end_time = times[1]
 
@@ -25,7 +39,7 @@ class RoundManager:
                 pairs = self.create_pairs(id_tournament)
                 matches = []
                 for index, (player_a, player_b) in enumerate(pairs):
-                    id_match = f"{id_round}:{index+1}"
+                    id_match = f"{id_round}:{index + 1}"
                     match = Match(id_match, player_a, player_b)
                     matches.append(match)
                 Round.get(id_round).set_matches(matches)
@@ -34,11 +48,17 @@ class RoundManager:
             raise Exception(f"Round {id_round} already exists.")
 
     def create_pairs(self, id_tournament, offset=0):
-        tournament = Tournament.get(id_tournament)
-        players = tournament.players
+        """
+        Create pairs of players that'll play against each other for the next round.
 
-        players = self.sort_players_by_score(players)
-        number_matches = len(players)//2
+        Args:
+            * *id_tournament* (str): ID of the tournament
+            * *offset* (int): An offset used when players already played together
+        """
+        tournament = Tournament.get(id_tournament)
+
+        players = self.sort_players_by_score(id_tournament)
+        number_matches = len(players) // 2
 
         pairs = []
 
@@ -60,7 +80,7 @@ class RoundManager:
                             offset += 1
                             return self.create_pairs(id_tournament, offset)
                         if offset > len(players):
-                            raise Exception("Must redefine algo:")
+                            raise Exception("Must redefine algo")
                     else:
                         player_b = players.pop(j)
                         break
@@ -70,18 +90,26 @@ class RoundManager:
 
     @staticmethod
     def set_results(id_round):
+        """
+        Set the results of the round
+
+        Arg:
+            * *id_round* (str): ID of the round to set
+        """
         single_round = Round.get(id_round)
         for match in single_round.matches:
             id_match = match.id_match
-            id_player = input(f"Match {id_match} | Give ID of the winner (if equality: -1) :")
+            dict_result = {"0": -1, "1": match.player_a.id_player, "2": match.player_b.id_player}
+            winner = input(f"Match {id_match} | Winner is P1 or P2? (Type 1 for P1, 2 for P2 and 0 if equality) : ")
+
             if match.player_a_score == match.match_in_progress and match.player_b_score == match.match_in_progress:
-                MatchManager().set_winner(id_match, id_player)
-                if match.player_a.id_player == id_player:
-                    match.set_player_a_score(1)
-                    match.set_player_b_score(0)
-                elif match.player_b.id_player == id_player:
-                    match.set_player_a_score(0)
-                    match.set_player_b_score(1)
+                MatchManager().set_winner(id_match, dict_result[winner])
+                if match.player_a.id_player == dict_result[winner]:
+                    match.set_player_a_score(1.)
+                    match.set_player_b_score(0.)
+                elif match.player_b.id_player == dict_result[winner]:
+                    match.set_player_a_score(0.)
+                    match.set_player_b_score(1.)
                 else:
                     match.set_player_a_score(0.5)
                     match.set_player_b_score(0.5)
@@ -90,6 +118,12 @@ class RoundManager:
 
     @staticmethod
     def round_done(id_round):
+        """
+        Check if the round is already set
+
+        Arg:
+            * *id_round* (str):
+        """
         single_round = Round.get(id_round)
         for match in single_round.matches:
             if not MatchManager.match_done(match.id_match):
@@ -98,21 +132,48 @@ class RoundManager:
 
     @staticmethod
     def check_first_round(tournament):
+        """
+        Check if the first round is already set.
+
+        Arg:
+            * *tournament* (object)
+        """
         if not tournament.rounds:
             return True
         else:
             return False
 
     @staticmethod
-    def sort_players_by_score(players):
-        players = sorted(players, key=attrgetter("elo"))
-        players = sorted(players, key=attrgetter("points"))
-        return players
+    def sort_players_by_score(id_tournament):
+        """
+        Sort the players by score, including also the elo.
+            score > elo
+
+        Arg:
+            * *id_tournament* (str): ID of the tournament
+        """
+        players = Tournament.get(id_tournament).players
+
+        list_stats = []
+        for player in players:
+            list_stats.append({"id_player": player.id_player,
+                               "elo": int(player.elo),
+                               "score": player.points[id_tournament] if id_tournament in player.points.keys() else 0
+                               })
+        list_stats = sorted(list_stats, key=itemgetter("elo"), reverse=True)
+        list_stats = sorted(list_stats, key=itemgetter("score"), reverse=True)
+
+        list_players = []
+        for item in list_stats:
+            list_players.append(Player.get(item["id_player"]))
+
+        return list_players
 
     @staticmethod
     def get_times(id_tournament):
         """
-        :return: return list of two elements : time_round_begin, time_round_end
+        Return list of two elements : time_round_begin, time_round_end
+        The format is : Hour:Minute:Second - Day/Month/Year
         """
         time_a = datetime.datetime.now()
         time_a_strf = time_a.strftime("%H:%M:%S - %d/%b/%Y")

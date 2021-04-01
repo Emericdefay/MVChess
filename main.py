@@ -2,9 +2,10 @@ from app import application
 
 
 def main():
-
+    """
+    Start the application.
+    """
     application.start()
-    pass
 
 
 if __name__ == "__main__":
