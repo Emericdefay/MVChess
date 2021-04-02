@@ -1,17 +1,21 @@
 # MVChess
 This is an offline program to manage chess tournaments. Creating tournaments, manage <br>
 players, set ranks, pairs of players for matches.
-
+<br>
 ##About
+
 
 #####Architecture of code
 The code is Model-View-Controller designed. For details, look at Architecture.png.
 
+
 #####Algorithm
 The algorithm that created pairs is also detailed at Pairs_algorithm.png.
 
+
 #####Libraries
 As demand, the data are saved on a .json at the root of the folder, managed by TinyDB.
+
 
 ##How to install
 Before using the program, you must set-up your environment.
@@ -187,3 +191,13 @@ load
 get flake-report
 exit
 ```
+
+## Flake8 report
+
+
+If you want to create a Flake8 report without execute the program. <br>
+You can simply type the followed command on a terminal at the /MVChess path.
+```
+flake8 --exclude=env,venv --format=html --htmldir=flake8_report --max-line-length=119
+```
+Please make sure that you virtual environment is named env or venv.

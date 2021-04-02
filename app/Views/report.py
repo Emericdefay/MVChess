@@ -8,7 +8,7 @@ from app.Models import Tournament
 
 class Report:
     """
-
+    Report is the viewing tool that allows user to manage tournaments properly.
     """
     def __init__(self):
         """
@@ -30,7 +30,7 @@ class Report:
     @staticmethod
     def show_players_alpha(id_tournament):
         """
-        Show players sorted by alpha in a tournament
+        Show players sorted by alpha in a tournament.
 
         Arg:
             * *id_tournament* (str): ID of the tournament
@@ -60,7 +60,7 @@ class Report:
     @staticmethod
     def show_players_ranked(id_tournament):
         """
-        Show players sorted by rank in a tournament
+        Show players sorted by rank in a tournament.
 
         Arg:
             * *id_tournament* (str): ID of the tournament
@@ -145,7 +145,7 @@ class Report:
     @staticmethod
     def show_match(id_match):
         """
-        Show a specific match from a tournament
+        Show a specific match from a tournament.
 
         Arg:
             * *id_match* (str): ID of the match

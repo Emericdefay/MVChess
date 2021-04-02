@@ -3,7 +3,7 @@ from app.Controllers import Controller
 
 def start():
     """
-    Allow user to give short instructions.
+    It allows user to give short instructions.
     Look at the controller.py to look at these instructions.
     """
     commands = {"new tournament": Controller.new_tournament,
@@ -36,11 +36,11 @@ def start():
 
     # At the beginning of the program, load all data from a data_base.
     Controller.load()
-    print("Need help? Type 'commands' to see all commands and there purpose.")
+    print("Need help? Type 'commands' to see all commands and there purposes.")
 
     while True:
-        instruction = input("ChessManager >>> ")
+        instruction = str(input("ChessManager >>> "))
         try:
             commands[instruction]()
         except KeyError:
-            print("Wrong Command")
+            print("Wrong Command.")

@@ -131,6 +131,7 @@ class Tournament:
     def load_from_db():
         """
         Load every serialized tournament from the *data_base.json* database to *tournaments* dictionary.
+        It transforms every serials from the data_base into objects : Player, Match, Round & Tournament.
         Required at the start of the program.
         """
         # 1. Deserialize all players
@@ -147,6 +148,7 @@ class Tournament:
         """
         Convert the objects to serialized tournaments.
         """
+        # Own Serials:
         serial_id_tournament = self.id_tournament
         serial_name_tournament = self.name_tournament
         serial_place = self.place
@@ -155,10 +157,11 @@ class Tournament:
         serial_number_rounds = self.number_rounds
         serial_time_control = self.time_control
         serial_description = self.description
+        serial_open = self.tournament_open
 
+        # Objects Serials:
         serialized_players = Player.get_serialized_from_tournament(self.id_tournament)
         serialized_rounds = Round.get_serialized_from_tournament(self.id_tournament)
-        serial_open = self.tournament_open
 
         serial_tournament = {'id_tournament': serial_id_tournament,
                              'name_tournament': serial_name_tournament,
@@ -173,10 +176,11 @@ class Tournament:
                              'tournament_open': serial_open
                              }
         self.serialized_tournaments[self.id_tournament] = serial_tournament
+
         self.tournaments_table.truncate()
         self.tournaments_table.insert(self.serialized_tournaments)
 
-    def set_players(self, players):
+    def set_players(self, players: object):
         """
         Set the players participate to the tournament.
 
@@ -186,7 +190,7 @@ class Tournament:
         self.players = players
         self.update()
 
-    def add_round(self, single_round):
+    def add_round(self, single_round: object):
         """
         Add a round to the tournament.
 
@@ -204,18 +208,18 @@ class Tournament:
         self.update()
 
     @classmethod
-    def get(cls, id_got: str):
+    def get(cls, id_tournament: str):
         """
         Get a specific tournament regarding its <id_tournament>.
 
         Arg:
-            * *id_got* (str): ID of the tournament we want to get.
+            * *id_tournament* (str): ID of the tournament we want to get.
 
-        Returns:
-            If the tournament exists, return the tournament object.
+        Return:
+            If the tournament exists, return it.
             Else, return False.
         """
-        db_tournament = cls.tournaments.get(id_got)
+        db_tournament = cls.tournaments.get(id_tournament)
         if db_tournament:
             tournament = Tournament(**db_tournament)
             return tournament
