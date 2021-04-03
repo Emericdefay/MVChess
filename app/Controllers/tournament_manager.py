@@ -67,7 +67,7 @@ class TournamentManager:
             print("The ID given is already taken. If you paused the creation it will resume."
                   " Else, please enter another ID.")
 
-    def add_players(self, id_tournament):
+    def add_players(self, id_tournament: str):
         """
         Add players (new or not) to the tournament.
 
@@ -110,7 +110,7 @@ class TournamentManager:
             raise Exception(f"Tournament ID : {id_tournament} does not exist.")
 
     @staticmethod
-    def add_round(id_tournament):
+    def add_round(id_tournament: str):
         """
         Add a round on the tournament.
 
@@ -131,7 +131,7 @@ class TournamentManager:
             raise Exception(f"There is no tournament : {id_tournament}")
 
     @staticmethod
-    def end_tournament(id_tournament):
+    def end_tournament(id_tournament: str):
         """
         Set the tournament closed.
 

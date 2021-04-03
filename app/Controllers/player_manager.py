@@ -14,7 +14,7 @@ class PlayerManager:
         pass
 
     @staticmethod
-    def give_points(id_player, id_tournament, points):
+    def give_points(id_player: str, id_tournament: str, points: float):
         """
         Give points to a player
 
@@ -27,7 +27,7 @@ class PlayerManager:
             player.set_points(id_tournament, points)
 
     @staticmethod
-    def edit_elo(id_player, elo):
+    def edit_elo(id_player: str, elo: int):
         """
         Edit the elo of a player.
 
@@ -39,7 +39,7 @@ class PlayerManager:
 
         player.set_elo(int(elo))
 
-    def create_player(self, id_player):
+    def create_player(self, id_player: str):
         """
         Create a new player
 

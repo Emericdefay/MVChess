@@ -121,7 +121,7 @@ class Controller:
         Report.show_players(players)
 
     @staticmethod
-    def get_players_alpha(id_tournament=None):
+    def get_players_alpha(id_tournament=None or str):
         """
         Get a sorted list of players of a tournament. Sorted by Alpha.
 
@@ -132,7 +132,7 @@ class Controller:
         Report.show_players_alpha(id_tournament)
 
     @staticmethod
-    def get_players_rank(id_tournament=None):
+    def get_players_rank(id_tournament=None or str):
         """
         Get a sorted list of players of a tournament. Sorted by rank.
 
@@ -150,7 +150,7 @@ class Controller:
         Report.show_all_tournaments()
 
     @staticmethod
-    def get_tournament(id_tournament=None):
+    def get_tournament(id_tournament=None or str):
         """
         Get specific tournament information
 
@@ -161,7 +161,7 @@ class Controller:
         Report.show_tournament(id_tournament)
 
     @staticmethod
-    def get_all_rounds(id_tournament=None):
+    def get_all_rounds(id_tournament=None or str):
         """
         Get all rounds from a tournament
 
@@ -172,7 +172,7 @@ class Controller:
         Report.show_all_rounds(id_tournament)
 
     @staticmethod
-    def get_round(id_round=None):
+    def get_round(id_round=None or str):
         """
         Get specific round information
 
@@ -183,7 +183,7 @@ class Controller:
         Report.show_round(id_round)
 
     @staticmethod
-    def get_all_matches(id_tournament=None):
+    def get_all_matches(id_tournament=None or str):
         """
         Get all matches information from a tournament
 
@@ -194,7 +194,7 @@ class Controller:
         Report.show_all_matches(id_tournament)
 
     @staticmethod
-    def get_match(id_match=None):
+    def get_match(id_match=None or str):
         """
         Get specific match information
 

@@ -22,7 +22,7 @@ class Match:
 
     matches = {}
     serialized_matches = {}
-    data_base = TinyDB("data_base.json")
+    data_base = TinyDB("data_base.json", sort_keys=True, indent=4, separators=(',', ': '))
     matches_table = data_base.table("matches")
     serialized_matches = matches_table.all()[0] if matches_table else {}
     """
@@ -116,7 +116,7 @@ class Match:
         self.matches_table.truncate()
         self.matches_table.insert(self.serialized_matches)
 
-    def set_player_a_score(self, score):
+    def set_player_a_score(self, score: float):
         """
         Set the player_a score attribute
 
@@ -126,7 +126,7 @@ class Match:
         self.player_a_score = score
         self.update()
 
-    def set_player_b_score(self, score):
+    def set_player_b_score(self, score: float):
         """
         Set the player_b score attribute
 
@@ -137,7 +137,7 @@ class Match:
         self.update()
 
     @classmethod
-    def get(cls, id_match):
+    def get(cls, id_match: str):
         """
         Get a specific match giving its unique ID.
 
@@ -151,7 +151,7 @@ class Match:
         return False
 
     @classmethod
-    def get_from_round(cls, id_round):
+    def get_from_round(cls, id_round: str):
         """
         Get all matches from a round of a tournament. Giving the Id of the round.
 
@@ -169,7 +169,7 @@ class Match:
         return list_matches
 
     @classmethod
-    def get_all_from_tournament(cls, id_tournament):
+    def get_all_from_tournament(cls, id_tournament: str):
         """
         Get all matches from a tournament, giving them tournament's ID.
 
@@ -194,8 +194,13 @@ class Match:
         """
         list_matches = []
         for id_match, db_match in cls.serialized_matches.items():
-            player_a = Player(**db_match["player_a"])
-            player_b = Player(**db_match["player_b"])
+            # Get IDs
+            player_a_id = db_match["player_a"]["id_player"]
+            player_b_id = db_match["player_b"]["id_player"]
+            # Get players
+            player_a = Player.get(player_a_id)
+            player_b = Player.get(player_b_id)
+
             kwargs = {"match_in_progress": db_match["match_in_progress"],
                       "player_a_score": db_match["player_a_score"],
                       "player_b_score": db_match["player_b_score"]

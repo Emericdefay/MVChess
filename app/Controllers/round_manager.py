@@ -19,7 +19,7 @@ class RoundManager:
         """
         pass
 
-    def create_round(self, id_round):
+    def create_round(self, id_round: str):
         """
         Create a new round for a tournament.
 
@@ -47,7 +47,7 @@ class RoundManager:
         else:
             raise Exception(f"Round {id_round} already exists.")
 
-    def create_pairs(self, id_tournament, offset=0):
+    def create_pairs(self, id_tournament: str, offset=0 or int):
         """
         Create pairs of players that'll play against each other for the next round.
 
@@ -89,7 +89,7 @@ class RoundManager:
         return pairs
 
     @staticmethod
-    def set_results(id_round):
+    def set_results(id_round: str):
         """
         Set the results of the round
 
@@ -117,7 +117,7 @@ class RoundManager:
                 print("You cannot edit previous matches.")
 
     @staticmethod
-    def round_done(id_round):
+    def round_done(id_round: str):
         """
         Check if the round is already set
 
@@ -131,7 +131,7 @@ class RoundManager:
         return True
 
     @staticmethod
-    def check_first_round(tournament):
+    def check_first_round(tournament: object):
         """
         Check if the first round is already set.
 
@@ -144,7 +144,7 @@ class RoundManager:
             return False
 
     @staticmethod
-    def sort_players_by_score(id_tournament):
+    def sort_players_by_score(id_tournament: str):
         """
         Sort the players by score, including also the elo.
             score > elo
@@ -170,7 +170,7 @@ class RoundManager:
         return list_players
 
     @staticmethod
-    def get_times(id_tournament):
+    def get_times(id_tournament: str):
         """
         Return list of two elements : time_round_begin, time_round_end
         The format is : Hour:Minute:Second - Day/Month/Year

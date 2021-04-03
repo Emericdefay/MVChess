@@ -17,7 +17,7 @@ class Report:
         pass
 
     @staticmethod
-    def show_players(players):
+    def show_players(players: list):
         """
         Show the list of players involved.
 
@@ -28,7 +28,7 @@ class Report:
             print(player)
 
     @staticmethod
-    def show_players_alpha(id_tournament):
+    def show_players_alpha(id_tournament: str):
         """
         Show players sorted by alpha in a tournament.
 
@@ -58,7 +58,7 @@ class Report:
             print(f"\t\t\t\t Score : {score}")
 
     @staticmethod
-    def show_players_ranked(id_tournament):
+    def show_players_ranked(id_tournament: str):
         """
         Show players sorted by rank in a tournament.
 
@@ -97,7 +97,7 @@ class Report:
             print(tournament)
 
     @staticmethod
-    def show_tournament(id_tournament):
+    def show_tournament(id_tournament: str):
         """
         Show a specific tournament.
 
@@ -108,7 +108,7 @@ class Report:
         print(tournament)
 
     @staticmethod
-    def show_all_rounds(id_tournament):
+    def show_all_rounds(id_tournament: str):
         """
         Show all rounds from a tournament.
 
@@ -120,7 +120,7 @@ class Report:
             print(single_round)
 
     @staticmethod
-    def show_round(id_round):
+    def show_round(id_round: str):
         """
         Show a specific round from a tournament.
 
@@ -131,7 +131,7 @@ class Report:
         print(single_round)
 
     @staticmethod
-    def show_all_matches(id_tournament):
+    def show_all_matches(id_tournament: str):
         """
         Show all matches from a tournament.
 
@@ -143,7 +143,7 @@ class Report:
             print(match)
 
     @staticmethod
-    def show_match(id_match):
+    def show_match(id_match: str):
         """
         Show a specific match from a tournament.
 

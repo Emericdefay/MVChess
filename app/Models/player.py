@@ -16,7 +16,7 @@ class Player:
     """
 
     players = {}
-    data_base = TinyDB("data_base.json")
+    data_base = TinyDB("data_base.json", sort_keys=True, indent=4, separators=(',', ': '))
     players_table = data_base.table("players")
     players = players_table.all()[0] if players_table else {}
     """
@@ -83,6 +83,7 @@ class Player:
         Steps:
             1. Make a dictionary with all attributes of the instance.
             2. Add this dictionary to the *players* dictionary at the key: *self.player*.
+            3. Update the data_base.json file
         """
         player_dict = {key: value for key, value in vars(self).items()}
         if self.id_player in self.players.keys():
@@ -90,7 +91,10 @@ class Player:
         else:
             self.players[self.id_player] = player_dict
 
-    def set_points(self, id_tournament, points):
+        self.players_table.truncate()
+        self.players_table.insert(self.players)
+
+    def set_points(self, id_tournament: str, points: float):
         """
         Add *points* to the player's points attribute for a *tournament*.
 
@@ -106,7 +110,7 @@ class Player:
         self.score = self.points[id_tournament]
         self.update()
 
-    def set_elo(self, elo):
+    def set_elo(self, elo: int):
         """
         Set the player elo.
 
@@ -116,7 +120,7 @@ class Player:
         self.elo = int(elo)
         self.update()
 
-    def set_match_played(self, id_tournament_player):
+    def set_match_played(self, id_tournament_player: str):
         """
         Add the match played in the *matches_played* list.
 
@@ -127,7 +131,7 @@ class Player:
         self.update()
 
     @classmethod
-    def get(cls, id_got):
+    def get(cls, id_got: str):
         """
         Get a specific player giving its unique ID.
 
@@ -143,7 +147,7 @@ class Player:
         return False
 
     @classmethod
-    def get_serialized(cls, id_player):
+    def get_serialized(cls, id_player: str):
         """
         Get a specific player serialized from it's ID.
 
@@ -153,7 +157,7 @@ class Player:
         return cls.players.get(id_player)
 
     @classmethod
-    def get_serialized_from_tournament(cls, id_tournament):
+    def get_serialized_from_tournament(cls, id_tournament: str):
         """
         Get all players serialized from a specific tournament.
 

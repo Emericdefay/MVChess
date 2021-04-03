@@ -22,7 +22,7 @@ class Round:
 
     rounds = {}
     serialized_rounds = {}
-    data_base = TinyDB("data_base.json")
+    data_base = TinyDB("data_base.json", sort_keys=True, indent=4, separators=(',', ': '))
     rounds_table = data_base.table("rounds")
     serialized_rounds = rounds_table.all()[0] if rounds_table else {}
     """
@@ -110,7 +110,7 @@ class Round:
         self.rounds_table.truncate()
         self.rounds_table.insert(self.serialized_rounds)
 
-    def set_matches(self, matches):
+    def set_matches(self, matches: list):
         """
         Set the *matches* attribute with list of Match objects.
 
@@ -121,7 +121,7 @@ class Round:
         self.update()
 
     @classmethod
-    def get(cls, id_round):
+    def get(cls, id_round: str):
         """
         Get a specific Round giving its unique ID.
 
@@ -135,7 +135,7 @@ class Round:
         return False
 
     @classmethod
-    def get_serialized_from_tournament(cls, id_tournament):
+    def get_serialized_from_tournament(cls, id_tournament: str):
         """
         Get all serialized rounds from a specific tournament.
 
@@ -149,7 +149,7 @@ class Round:
         return list_round
 
     @classmethod
-    def get_all_from_tournament(cls, id_tournament):
+    def get_all_from_tournament(cls, id_tournament: str):
         """
         Get all rounds of a specific tournament.
 

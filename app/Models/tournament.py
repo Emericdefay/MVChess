@@ -24,7 +24,7 @@ class Tournament:
 
     tournaments = {}
     serialized_tournaments = {}
-    data_base = TinyDB("data_base.json")
+    data_base = TinyDB("data_base.json", sort_keys=True, indent=4, separators=(',', ': '))
     tournaments_table = data_base.table("tournaments")
     serialized_tournaments = tournaments_table.all()[0] if tournaments_table else {}
     """
@@ -130,18 +130,17 @@ class Tournament:
     @staticmethod
     def load_from_db():
         """
-        Load every serialized tournament from the *data_base.json* database to *tournaments* dictionary.
+        Update all objects according to the data_base. Preventing ghost information following analysis' errors.
         It transforms every serials from the data_base into objects : Player, Match, Round & Tournament.
-        Required at the start of the program.
+        Required at the start of the program and after every modification.
         """
         # 1. Deserialize all players
         Player.get_all()
-        # 2. Deserialize all tournaments
-        #   2.1 Deserialize Matches
+        # 2 Deserialize Matches
         Match.deserialize_all()
-        #   2.2 Deserialize Rounds
+        # 3 Deserialize Rounds
         Round.deserialize_all()
-        #   2.3 Deserialize Tournaments
+        # 4 Deserialize Tournaments
         Tournament.deserialize_all()
 
     def serialize(self):
@@ -180,7 +179,7 @@ class Tournament:
         self.tournaments_table.truncate()
         self.tournaments_table.insert(self.serialized_tournaments)
 
-    def set_players(self, players: object):
+    def set_players(self, players: list):
         """
         Set the players participate to the tournament.
 

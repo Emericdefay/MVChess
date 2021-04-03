@@ -12,7 +12,7 @@ class MatchManager:
         pass
 
     @staticmethod
-    def create_match(id_match, player_a, player_b):
+    def create_match(id_match: str, player_a: object, player_b: object):
         """
         Create a match between player A & B.
 
@@ -24,7 +24,7 @@ class MatchManager:
         Match(id_match, player_a, player_b)
 
     @staticmethod
-    def set_winner(id_match, id_player):
+    def set_winner(id_match: str, id_player: str):
         """
         Set the winner of a match.
 
@@ -50,7 +50,7 @@ class MatchManager:
             print("Can't edit score.")
 
     @staticmethod
-    def match_done(id_match):
+    def match_done(id_match: str):
         """
         Set the match done
 
