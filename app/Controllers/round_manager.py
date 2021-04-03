@@ -26,28 +26,35 @@ class RoundManager:
         Arg:
             * *id_round* (str): ID of the round
         """
-        if not Round.get(id_round):
-            id_tournament = id_round.split(":")[0]
-            times = self.get_times(id_tournament)
+        id_tournament = id_round.split(":")[0]
+        tournament = Tournament.get(id_tournament)
 
-            name_round = f"Round {id_round.split(':')[1]}"
-            begin_time = times[0]
-            end_time = times[1]
+        if tournament.tournament_open or len(tournament.rounds) >= tournament.number_rounds:
+            if not Round.get(id_round):
+                times = self.get_times(id_tournament)
 
-            Round(id_round, name_round, begin_time, end_time)
-            if Tournament.get(id_tournament).players:
-                pairs = self.create_pairs(id_tournament)
-                matches = []
-                for index, (player_a, player_b) in enumerate(pairs):
-                    id_match = f"{id_round}:{index + 1}"
-                    match = Match(id_match, player_a, player_b)
-                    matches.append(match)
-                Round.get(id_round).set_matches(matches)
-                Tournament.get(id_tournament).add_round(Round.get(id_round))
+                name_round = f"Round {id_round.split(':')[1]}"
+                begin_time = times[0]
+                end_time = times[1]
+
+                Round(id_round, name_round, begin_time, end_time)
+                if tournament.players:
+                    pairs = self.create_pairs(id_tournament)
+                    matches = []
+                    for index, (player_a, player_b) in enumerate(pairs):
+                        id_match = f"{id_round}:{index + 1}"
+                        match = Match(id_match, player_a, player_b)
+                        matches.append(match)
+                    Round.get(id_round).set_matches(matches)
+                    tournament.add_round(Round.get(id_round))
+                    if len(tournament.rounds) >= tournament.number_rounds:
+                        tournament.tournament_open = False
+            else:
+                raise Exception(f"Round {id_round} already exists.")
         else:
-            raise Exception(f"Round {id_round} already exists.")
+            print("The tournament has already reach his maximum rounds number.")
 
-    def create_pairs(self, id_tournament: str, offset=0 or int):
+    def create_pairs(self, id_tournament: str, offset=0):
         """
         Create pairs of players that'll play against each other for the next round.
 
@@ -80,7 +87,7 @@ class RoundManager:
                             offset += 1
                             return self.create_pairs(id_tournament, offset)
                         if offset > len(players):
-                            raise Exception("Must redefine algo")
+                            player_b = players.pop()
                     else:
                         player_b = players.pop(j)
                         break

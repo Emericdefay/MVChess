@@ -1,4 +1,4 @@
-from tinydb import TinyDB
+from tinydb import TinyDB, Query
 from .match import Match
 
 
@@ -86,7 +86,6 @@ class Round:
             self.rounds[self.id_round].update(round_dict)
         else:
             self.rounds[self.id_round] = round_dict
-
         self.serialize()
 
     def serialize(self):

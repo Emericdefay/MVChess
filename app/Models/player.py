@@ -103,10 +103,10 @@ class Player:
             * *points* (float): Points to add to this tournament.
         """
         if id_tournament in self.points.keys():
-            self.points[id_tournament] += int(points)
+            self.points[id_tournament] += float(points)
         else:
             self.points[id_tournament] = 0
-            self.points[id_tournament] += int(points)
+            self.points[id_tournament] += float(points)
         self.score = self.points[id_tournament]
         self.update()
 

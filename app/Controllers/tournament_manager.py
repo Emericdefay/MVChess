@@ -94,12 +94,22 @@ class TournamentManager:
                 list_players = []
                 for i in range(tournament.number_players):
                     id_player = input(f"Tournament : {tournament.name_tournament},"
-                                      f" player {i+1}/{tournament.number_players}\n"
+                                      f" player {i + 1}/{tournament.number_players}\n"
                                       f"Give the ID of the player that'll play. "
                                       f"If it's a new player, please give an unique"
                                       f"ID to register him : ")
-                    if Player.get(id_player):
+                    if Player.get(id_player) in list_players:
+                        print("This player is already playing this tournament! Please retry : ")
+                        id_player = input(f"Tournament : {tournament.name_tournament},"
+                                          f" player {i + 1}/{tournament.number_players}\n"
+                                          f"Give the ID of the player that'll play. "
+                                          f"If it's a new player, please give an unique"
+                                          f"ID to register him : ")
+                    if Player.get(id_player) and Player.get(id_player) not in list_players:
                         list_players.append(Player.get(id_player))
+                    elif Player.get(id_player) not in list_players:
+                        raise ("A player has been recorded twice for the same tournament two time in a raw."
+                               "Please recreate the same tournament and add 8 different players; ")
                     else:
                         PlayerManager().create_player(id_player)
                         list_players.append(Player.get(id_player))

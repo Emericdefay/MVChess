@@ -135,11 +135,11 @@ class Tournament:
         Required at the start of the program and after every modification.
         """
         # 1. Deserialize all players
-        Player.get_all()
+        #Player.get_all()
         # 2 Deserialize Matches
-        Match.deserialize_all()
+        #Match.deserialize_all()
         # 3 Deserialize Rounds
-        Round.deserialize_all()
+        #Round.deserialize_all()
         # 4 Deserialize Tournaments
         Tournament.deserialize_all()
 
