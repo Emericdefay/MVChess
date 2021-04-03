@@ -1,6 +1,7 @@
+# Libraries
 import datetime
 from operator import itemgetter
-
+# Modules
 from app.Models import Tournament
 from app.Models import Round
 from app.Models import Match

@@ -1,6 +1,7 @@
+# Libraries
 from tinydb import TinyDB
+# Modules
 from .player import Player
-from .match import Match
 from .round import Round
 
 
@@ -100,7 +101,7 @@ class Tournament:
         newline = "\n"
         return f"\033[1m{self.name_tournament}\033[0m - " \
                f"\033[1mID :\033[0m {self.id_tournament} \n" \
-               f"\00[1mPlace :\033[0m {self.place}\n" \
+               f"\033[1mPlace :\033[0m {self.place}\n" \
                f"\033[1mDate(s) :\033[0m {self.date}\n" \
                f"\033[1mnb. players :\033[0m {self.number_players}\n" \
                f"\033[1mnb. rounds :\033[0m {self.number_rounds}\n" \
@@ -134,13 +135,6 @@ class Tournament:
         It transforms every serials from the data_base into objects : Player, Match, Round & Tournament.
         Required at the start of the program and after every modification.
         """
-        # 1. Deserialize all players
-        #Player.get_all()
-        # 2 Deserialize Matches
-        #Match.deserialize_all()
-        # 3 Deserialize Rounds
-        #Round.deserialize_all()
-        # 4 Deserialize Tournaments
         Tournament.deserialize_all()
 
     def serialize(self):

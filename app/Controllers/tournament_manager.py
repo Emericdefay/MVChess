@@ -1,5 +1,6 @@
+# Libraries
 from random import randint
-
+# Modules
 from app.Models import Tournament
 from app.Models import Player
 from .player_manager import PlayerManager
@@ -107,7 +108,7 @@ class TournamentManager:
                                           f"ID to register him : ")
                     if Player.get(id_player) and Player.get(id_player) not in list_players:
                         list_players.append(Player.get(id_player))
-                    elif Player.get(id_player) not in list_players:
+                    elif Player.get(id_player) in list_players:
                         raise ("A player has been recorded twice for the same tournament two time in a raw."
                                "Please recreate the same tournament and add 8 different players; ")
                     else:

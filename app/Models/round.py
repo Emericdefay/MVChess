@@ -1,4 +1,6 @@
-from tinydb import TinyDB, Query
+# Libraries
+from tinydb import TinyDB
+# Modules
 from .match import Match
 
 

@@ -1,4 +1,6 @@
+# Libraries
 from random import randint
+# Modules
 from app.Models import Player
 
 

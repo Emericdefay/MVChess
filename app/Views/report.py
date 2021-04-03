@@ -1,5 +1,6 @@
+# Libraries
 from operator import itemgetter
-
+# Modules
 from app.Models import Player
 from app.Models import Match
 from app.Models import Round

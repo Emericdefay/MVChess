@@ -1,4 +1,6 @@
+# Libraries
 from tinydb import TinyDB
+# Modules
 from .player import Player
 
 
