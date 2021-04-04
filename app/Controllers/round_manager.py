@@ -130,7 +130,7 @@ class RoundManager:
         Check if the round is already set
 
         Arg:
-            * *id_round* (str):
+            * *id_round* (str): ID of the round.
         """
         single_round = Round.get(id_round)
         for match in single_round.matches:
@@ -144,7 +144,7 @@ class RoundManager:
         Check if the first round is already set.
 
         Arg:
-            * *tournament* (object)
+            * *tournament* (object): a Tournament instance.
         """
         if not tournament.rounds:
             return True

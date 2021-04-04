@@ -29,8 +29,8 @@ class Controller:
         Create a new tournament.
         """
         id_tournament = input("Give ID of tournament : ")
-        TournamentManager().create_tournament(id_tournament)
-        TournamentManager().add_players(id_tournament)
+        if TournamentManager().create_tournament(id_tournament):
+            TournamentManager().add_players(id_tournament)
         RoundManager().create_round(f"{id_tournament}:1")
         Tournament.load_from_db()
 
@@ -212,50 +212,6 @@ class Controller:
         Needed to get data from previous sessions.
         """
         Tournament.load_from_db()
-
-    @staticmethod
-    def get_flake_report():
-        """
-        Create a flake8 report at the root of the program.
-        """
-        os.system("cd ..")
-        os.system("flake8 --exclude=env,venv --format=html --htmldir=flake8_report --max-line-length=119")
-
-    @staticmethod
-    def list_commands():
-        """
-        Show all commands with a description.
-        """
-        commands = {"new tournament": Controller.new_tournament,
-                    "new round": Controller.new_round,
-                    "new player": Controller.new_player,
-
-                    "set round": Controller.set_round,
-                    "set player": Controller.set_player,
-
-                    "get players -all -alpha": Controller.get_all_players_alpha,
-                    "get players -all -rank": Controller.get_all_players_rank,
-                    "get players -alpha": Controller.get_players_alpha,
-                    "get players -rank": Controller.get_players_rank,
-
-                    "get tournament -all": Controller.get_all_tournaments,
-                    "get tournament": Controller.get_tournament,
-
-                    "get round -all": Controller.get_all_rounds,
-                    "get round": Controller.get_round,
-
-                    "get match -all": Controller.get_all_matches,
-                    "get match": Controller.get_match,
-
-                    "load": Controller.load,
-
-                    "get flake-report": Controller.get_flake_report,
-                    "commands": Controller.list_commands,
-                    "exit": Controller.close_app
-                    }
-
-        for key, value in commands.items():
-            print(f"{key}{value.__doc__}")
 
     @staticmethod
     def close_app():

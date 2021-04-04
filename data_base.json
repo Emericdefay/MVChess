@@ -10,12 +10,15 @@
                     "first_name": "8",
                     "id_player": "8",
                     "last_name": "8",
-                    "matches_passed": [],
+                    "matches_passed": [
+                        "2:1516"
+                    ],
                     "points": {},
                     "score": 0,
                     "sex": "8",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_a_score": "...",
@@ -25,12 +28,15 @@
                     "first_name": "4",
                     "id_player": "4",
                     "last_name": "4",
-                    "matches_passed": [],
+                    "matches_passed": [
+                        "2:12"
+                    ],
                     "points": {},
                     "score": 0,
                     "sex": "4",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_b_score": "..."
@@ -44,12 +50,15 @@
                     "first_name": "7",
                     "id_player": "7",
                     "last_name": "7",
-                    "matches_passed": [],
+                    "matches_passed": [
+                        "2:15"
+                    ],
                     "points": {},
                     "score": 0,
                     "sex": "7",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_a_score": "...",
@@ -59,12 +68,17 @@
                     "first_name": "3",
                     "id_player": "3",
                     "last_name": "3",
-                    "matches_passed": [],
-                    "points": {},
-                    "score": 0,
+                    "matches_passed": [
+                        "2:11"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
                     "sex": "3",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_b_score": "..."
@@ -78,12 +92,15 @@
                     "first_name": "6",
                     "id_player": "6",
                     "last_name": "6",
-                    "matches_passed": [],
+                    "matches_passed": [
+                        "2:14"
+                    ],
                     "points": {},
                     "score": 0,
                     "sex": "6",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_a_score": "...",
@@ -93,12 +110,17 @@
                     "first_name": "2",
                     "id_player": "2",
                     "last_name": "2",
-                    "matches_passed": [],
-                    "points": {},
-                    "score": 0,
+                    "matches_passed": [
+                        "2:10"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
                     "sex": "2",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_b_score": "..."
@@ -112,12 +134,17 @@
                     "first_name": "5",
                     "id_player": "5",
                     "last_name": "5",
-                    "matches_passed": [],
-                    "points": {},
-                    "score": 0,
+                    "matches_passed": [
+                        "2:13"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
                     "sex": "5",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
                     ]
                 },
                 "player_a_score": "...",
@@ -127,12 +154,673 @@
                     "first_name": "1",
                     "id_player": "1",
                     "last_name": "1",
-                    "matches_passed": [],
-                    "points": {},
-                    "score": 0,
+                    "matches_passed": [
+                        "2:9"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
                     "sex": "1",
                     "tournaments_played": [
-                        "1"
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:1:1": {
+                "id_match": "2:1:1",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "16",
+                    "elo": 16,
+                    "first_name": "16",
+                    "id_player": "1516",
+                    "last_name": "16",
+                    "matches_passed": [
+                        "2:8"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "16",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 1.0,
+                "player_b": {
+                    "birthday": "8",
+                    "elo": 8,
+                    "first_name": "8",
+                    "id_player": "8",
+                    "last_name": "8",
+                    "matches_passed": [
+                        "2:1516"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "8",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 0.0
+            },
+            "2:1:2": {
+                "id_match": "2:1:2",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "15",
+                    "elo": 15,
+                    "first_name": "15",
+                    "id_player": "15",
+                    "last_name": "15",
+                    "matches_passed": [
+                        "2:7"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "15",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 1.0,
+                "player_b": {
+                    "birthday": "7",
+                    "elo": 7,
+                    "first_name": "7",
+                    "id_player": "7",
+                    "last_name": "7",
+                    "matches_passed": [
+                        "2:15"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "7",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 0.0
+            },
+            "2:1:3": {
+                "id_match": "2:1:3",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "14",
+                    "elo": 14,
+                    "first_name": "14",
+                    "id_player": "14",
+                    "last_name": "14",
+                    "matches_passed": [
+                        "2:6"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "14",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 1.0,
+                "player_b": {
+                    "birthday": "6",
+                    "elo": 6,
+                    "first_name": "6",
+                    "id_player": "6",
+                    "last_name": "6",
+                    "matches_passed": [
+                        "2:14"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "6",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 0.0
+            },
+            "2:1:4": {
+                "id_match": "2:1:4",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "13",
+                    "elo": 13,
+                    "first_name": "13",
+                    "id_player": "13",
+                    "last_name": "13",
+                    "matches_passed": [
+                        "2:5"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "13",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 0.0,
+                "player_b": {
+                    "birthday": "5",
+                    "elo": 5,
+                    "first_name": "5",
+                    "id_player": "5",
+                    "last_name": "5",
+                    "matches_passed": [
+                        "2:13"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "5",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 1.0
+            },
+            "2:1:5": {
+                "id_match": "2:1:5",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "12",
+                    "elo": 12,
+                    "first_name": "12",
+                    "id_player": "12",
+                    "last_name": "12",
+                    "matches_passed": [
+                        "2:4"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "12",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 1.0,
+                "player_b": {
+                    "birthday": "4",
+                    "elo": 4,
+                    "first_name": "4",
+                    "id_player": "4",
+                    "last_name": "4",
+                    "matches_passed": [
+                        "2:12"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "4",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 0.0
+            },
+            "2:1:6": {
+                "id_match": "2:1:6",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "11",
+                    "elo": 11,
+                    "first_name": "11",
+                    "id_player": "11",
+                    "last_name": "11",
+                    "matches_passed": [
+                        "2:3"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "11",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 0.0,
+                "player_b": {
+                    "birthday": "3",
+                    "elo": 3,
+                    "first_name": "3",
+                    "id_player": "3",
+                    "last_name": "3",
+                    "matches_passed": [
+                        "2:11"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "3",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 1.0
+            },
+            "2:1:7": {
+                "id_match": "2:1:7",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "10",
+                    "elo": 10,
+                    "first_name": "10",
+                    "id_player": "10",
+                    "last_name": "10",
+                    "matches_passed": [
+                        "2:2"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "10",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 0.0,
+                "player_b": {
+                    "birthday": "2",
+                    "elo": 2,
+                    "first_name": "2",
+                    "id_player": "2",
+                    "last_name": "2",
+                    "matches_passed": [
+                        "2:10"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "2",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 1.0
+            },
+            "2:1:8": {
+                "id_match": "2:1:8",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "9",
+                    "elo": 9,
+                    "first_name": "9",
+                    "id_player": "9",
+                    "last_name": "9",
+                    "matches_passed": [
+                        "2:1"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "9",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": 0.0,
+                "player_b": {
+                    "birthday": "1",
+                    "elo": 1,
+                    "first_name": "1",
+                    "id_player": "1",
+                    "last_name": "1",
+                    "matches_passed": [
+                        "2:9"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "1",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": 1.0
+            },
+            "2:2:1": {
+                "id_match": "2:2:1",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "16",
+                    "elo": 16,
+                    "first_name": "16",
+                    "id_player": "1516",
+                    "last_name": "16",
+                    "matches_passed": [
+                        "2:8"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "16",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "15",
+                    "elo": 15,
+                    "first_name": "15",
+                    "id_player": "15",
+                    "last_name": "15",
+                    "matches_passed": [
+                        "2:7"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "15",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:2": {
+                "id_match": "2:2:2",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "14",
+                    "elo": 14,
+                    "first_name": "14",
+                    "id_player": "14",
+                    "last_name": "14",
+                    "matches_passed": [
+                        "2:6"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "14",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "12",
+                    "elo": 12,
+                    "first_name": "12",
+                    "id_player": "12",
+                    "last_name": "12",
+                    "matches_passed": [
+                        "2:4"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "12",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:3": {
+                "id_match": "2:2:3",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "5",
+                    "elo": 5,
+                    "first_name": "5",
+                    "id_player": "5",
+                    "last_name": "5",
+                    "matches_passed": [
+                        "2:13"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "5",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "3",
+                    "elo": 3,
+                    "first_name": "3",
+                    "id_player": "3",
+                    "last_name": "3",
+                    "matches_passed": [
+                        "2:11"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "3",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:4": {
+                "id_match": "2:2:4",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "2",
+                    "elo": 2,
+                    "first_name": "2",
+                    "id_player": "2",
+                    "last_name": "2",
+                    "matches_passed": [
+                        "2:10"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "2",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "1",
+                    "elo": 1,
+                    "first_name": "1",
+                    "id_player": "1",
+                    "last_name": "1",
+                    "matches_passed": [
+                        "2:9"
+                    ],
+                    "points": {
+                        "2": 1.0
+                    },
+                    "score": 1,
+                    "sex": "1",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:5": {
+                "id_match": "2:2:5",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "13",
+                    "elo": 13,
+                    "first_name": "13",
+                    "id_player": "13",
+                    "last_name": "13",
+                    "matches_passed": [
+                        "2:5"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "13",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "11",
+                    "elo": 11,
+                    "first_name": "11",
+                    "id_player": "11",
+                    "last_name": "11",
+                    "matches_passed": [
+                        "2:3"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "11",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:6": {
+                "id_match": "2:2:6",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "10",
+                    "elo": 10,
+                    "first_name": "10",
+                    "id_player": "10",
+                    "last_name": "10",
+                    "matches_passed": [
+                        "2:2"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "10",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "9",
+                    "elo": 9,
+                    "first_name": "9",
+                    "id_player": "9",
+                    "last_name": "9",
+                    "matches_passed": [
+                        "2:1"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "9",
+                    "tournaments_played": [
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:7": {
+                "id_match": "2:2:7",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "8",
+                    "elo": 8,
+                    "first_name": "8",
+                    "id_player": "8",
+                    "last_name": "8",
+                    "matches_passed": [
+                        "2:1516"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "8",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "7",
+                    "elo": 7,
+                    "first_name": "7",
+                    "id_player": "7",
+                    "last_name": "7",
+                    "matches_passed": [
+                        "2:15"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "7",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_b_score": "..."
+            },
+            "2:2:8": {
+                "id_match": "2:2:8",
+                "match_in_progress": "...",
+                "player_a": {
+                    "birthday": "6",
+                    "elo": 6,
+                    "first_name": "6",
+                    "id_player": "6",
+                    "last_name": "6",
+                    "matches_passed": [
+                        "2:14"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "6",
+                    "tournaments_played": [
+                        "1",
+                        "2"
+                    ]
+                },
+                "player_a_score": "...",
+                "player_b": {
+                    "birthday": "4",
+                    "elo": 4,
+                    "first_name": "4",
+                    "id_player": "4",
+                    "last_name": "4",
+                    "matches_passed": [
+                        "2:12"
+                    ],
+                    "points": {},
+                    "score": 0,
+                    "sex": "4",
+                    "tournaments_played": [
+                        "1",
+                        "2"
                     ]
                 },
                 "player_b_score": "..."
@@ -147,12 +835,137 @@
                 "first_name": "1",
                 "id_player": "1",
                 "last_name": "1",
-                "matches_passed": [],
-                "points": {},
-                "score": 0,
+                "matches_passed": [
+                    "2:9"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
                 "sex": "1",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
+                ]
+            },
+            "10": {
+                "birthday": "10",
+                "elo": 10,
+                "first_name": "10",
+                "id_player": "10",
+                "last_name": "10",
+                "matches_passed": [
+                    "2:2"
+                ],
+                "points": {},
+                "score": 0,
+                "sex": "10",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "11": {
+                "birthday": "11",
+                "elo": 11,
+                "first_name": "11",
+                "id_player": "11",
+                "last_name": "11",
+                "matches_passed": [
+                    "2:3"
+                ],
+                "points": {},
+                "score": 0,
+                "sex": "11",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "12": {
+                "birthday": "12",
+                "elo": 12,
+                "first_name": "12",
+                "id_player": "12",
+                "last_name": "12",
+                "matches_passed": [
+                    "2:4"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
+                "sex": "12",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "13": {
+                "birthday": "13",
+                "elo": 13,
+                "first_name": "13",
+                "id_player": "13",
+                "last_name": "13",
+                "matches_passed": [
+                    "2:5"
+                ],
+                "points": {},
+                "score": 0,
+                "sex": "13",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "14": {
+                "birthday": "14",
+                "elo": 14,
+                "first_name": "14",
+                "id_player": "14",
+                "last_name": "14",
+                "matches_passed": [
+                    "2:6"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
+                "sex": "14",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "15": {
+                "birthday": "15",
+                "elo": 15,
+                "first_name": "15",
+                "id_player": "15",
+                "last_name": "15",
+                "matches_passed": [
+                    "2:7"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
+                "sex": "15",
+                "tournaments_played": [
+                    "2"
+                ]
+            },
+            "1516": {
+                "birthday": "16",
+                "elo": 16,
+                "first_name": "16",
+                "id_player": "1516",
+                "last_name": "16",
+                "matches_passed": [
+                    "2:8"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
+                "sex": "16",
+                "tournaments_played": [
+                    "2"
                 ]
             },
             "2": {
@@ -161,12 +974,17 @@
                 "first_name": "2",
                 "id_player": "2",
                 "last_name": "2",
-                "matches_passed": [],
-                "points": {},
-                "score": 0,
+                "matches_passed": [
+                    "2:10"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
                 "sex": "2",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "3": {
@@ -175,12 +993,17 @@
                 "first_name": "3",
                 "id_player": "3",
                 "last_name": "3",
-                "matches_passed": [],
-                "points": {},
-                "score": 0,
+                "matches_passed": [
+                    "2:11"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
                 "sex": "3",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "4": {
@@ -189,12 +1012,15 @@
                 "first_name": "4",
                 "id_player": "4",
                 "last_name": "4",
-                "matches_passed": [],
+                "matches_passed": [
+                    "2:12"
+                ],
                 "points": {},
                 "score": 0,
                 "sex": "4",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "5": {
@@ -203,12 +1029,17 @@
                 "first_name": "5",
                 "id_player": "5",
                 "last_name": "5",
-                "matches_passed": [],
-                "points": {},
-                "score": 0,
+                "matches_passed": [
+                    "2:13"
+                ],
+                "points": {
+                    "2": 1.0
+                },
+                "score": 1,
                 "sex": "5",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "6": {
@@ -217,12 +1048,15 @@
                 "first_name": "6",
                 "id_player": "6",
                 "last_name": "6",
-                "matches_passed": [],
+                "matches_passed": [
+                    "2:14"
+                ],
                 "points": {},
                 "score": 0,
                 "sex": "6",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "7": {
@@ -231,12 +1065,15 @@
                 "first_name": "7",
                 "id_player": "7",
                 "last_name": "7",
-                "matches_passed": [],
+                "matches_passed": [
+                    "2:15"
+                ],
                 "points": {},
                 "score": 0,
                 "sex": "7",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
                 ]
             },
             "8": {
@@ -245,12 +1082,31 @@
                 "first_name": "8",
                 "id_player": "8",
                 "last_name": "8",
-                "matches_passed": [],
+                "matches_passed": [
+                    "2:1516"
+                ],
                 "points": {},
                 "score": 0,
                 "sex": "8",
                 "tournaments_played": [
-                    "1"
+                    "1",
+                    "2"
+                ]
+            },
+            "9": {
+                "birthday": "9",
+                "elo": 9,
+                "first_name": "9",
+                "id_player": "9",
+                "last_name": "9",
+                "matches_passed": [
+                    "2:1"
+                ],
+                "points": {},
+                "score": 0,
+                "sex": "9",
+                "tournaments_played": [
+                    "2"
                 ]
             }
         }
@@ -271,12 +1127,15 @@
                             "first_name": "8",
                             "id_player": "8",
                             "last_name": "8",
-                            "matches_passed": [],
+                            "matches_passed": [
+                                "2:1516"
+                            ],
                             "points": {},
                             "score": 0,
                             "sex": "8",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_a_score": "...",
@@ -286,12 +1145,15 @@
                             "first_name": "4",
                             "id_player": "4",
                             "last_name": "4",
-                            "matches_passed": [],
+                            "matches_passed": [
+                                "2:12"
+                            ],
                             "points": {},
                             "score": 0,
                             "sex": "4",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_b_score": "..."
@@ -305,12 +1167,15 @@
                             "first_name": "7",
                             "id_player": "7",
                             "last_name": "7",
-                            "matches_passed": [],
+                            "matches_passed": [
+                                "2:15"
+                            ],
                             "points": {},
                             "score": 0,
                             "sex": "7",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_a_score": "...",
@@ -320,12 +1185,17 @@
                             "first_name": "3",
                             "id_player": "3",
                             "last_name": "3",
-                            "matches_passed": [],
-                            "points": {},
-                            "score": 0,
+                            "matches_passed": [
+                                "2:11"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
                             "sex": "3",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_b_score": "..."
@@ -339,12 +1209,15 @@
                             "first_name": "6",
                             "id_player": "6",
                             "last_name": "6",
-                            "matches_passed": [],
+                            "matches_passed": [
+                                "2:14"
+                            ],
                             "points": {},
                             "score": 0,
                             "sex": "6",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_a_score": "...",
@@ -354,12 +1227,17 @@
                             "first_name": "2",
                             "id_player": "2",
                             "last_name": "2",
-                            "matches_passed": [],
-                            "points": {},
-                            "score": 0,
+                            "matches_passed": [
+                                "2:10"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
                             "sex": "2",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_b_score": "..."
@@ -373,12 +1251,17 @@
                             "first_name": "5",
                             "id_player": "5",
                             "last_name": "5",
-                            "matches_passed": [],
-                            "points": {},
-                            "score": 0,
+                            "matches_passed": [
+                                "2:13"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
                             "sex": "5",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_a_score": "...",
@@ -388,18 +1271,695 @@
                             "first_name": "1",
                             "id_player": "1",
                             "last_name": "1",
-                            "matches_passed": [],
-                            "points": {},
-                            "score": 0,
+                            "matches_passed": [
+                                "2:9"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
                             "sex": "1",
                             "tournaments_played": [
-                                "1"
+                                "1",
+                                "2"
                             ]
                         },
                         "player_b_score": "..."
                     }
                 ],
                 "name_round": "Round 1"
+            },
+            "2:1": {
+                "begin_time": "20:24:00 - 03/Apr/2021",
+                "end_time": "20:44:00 - 03/Apr/2021",
+                "id_round": "2:1",
+                "matches": [
+                    {
+                        "id_match": "2:1:1",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "16",
+                            "elo": 16,
+                            "first_name": "16",
+                            "id_player": "1516",
+                            "last_name": "16",
+                            "matches_passed": [
+                                "2:8"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "16",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 1.0,
+                        "player_b": {
+                            "birthday": "8",
+                            "elo": 8,
+                            "first_name": "8",
+                            "id_player": "8",
+                            "last_name": "8",
+                            "matches_passed": [
+                                "2:1516"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "8",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 0.0
+                    },
+                    {
+                        "id_match": "2:1:2",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "15",
+                            "elo": 15,
+                            "first_name": "15",
+                            "id_player": "15",
+                            "last_name": "15",
+                            "matches_passed": [
+                                "2:7"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "15",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 1.0,
+                        "player_b": {
+                            "birthday": "7",
+                            "elo": 7,
+                            "first_name": "7",
+                            "id_player": "7",
+                            "last_name": "7",
+                            "matches_passed": [
+                                "2:15"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "7",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 0.0
+                    },
+                    {
+                        "id_match": "2:1:3",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "14",
+                            "elo": 14,
+                            "first_name": "14",
+                            "id_player": "14",
+                            "last_name": "14",
+                            "matches_passed": [
+                                "2:6"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "14",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 1.0,
+                        "player_b": {
+                            "birthday": "6",
+                            "elo": 6,
+                            "first_name": "6",
+                            "id_player": "6",
+                            "last_name": "6",
+                            "matches_passed": [
+                                "2:14"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "6",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 0.0
+                    },
+                    {
+                        "id_match": "2:1:4",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "13",
+                            "elo": 13,
+                            "first_name": "13",
+                            "id_player": "13",
+                            "last_name": "13",
+                            "matches_passed": [
+                                "2:5"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "13",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 0.0,
+                        "player_b": {
+                            "birthday": "5",
+                            "elo": 5,
+                            "first_name": "5",
+                            "id_player": "5",
+                            "last_name": "5",
+                            "matches_passed": [
+                                "2:13"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "5",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 1.0
+                    },
+                    {
+                        "id_match": "2:1:5",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "12",
+                            "elo": 12,
+                            "first_name": "12",
+                            "id_player": "12",
+                            "last_name": "12",
+                            "matches_passed": [
+                                "2:4"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "12",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 1.0,
+                        "player_b": {
+                            "birthday": "4",
+                            "elo": 4,
+                            "first_name": "4",
+                            "id_player": "4",
+                            "last_name": "4",
+                            "matches_passed": [
+                                "2:12"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "4",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 0.0
+                    },
+                    {
+                        "id_match": "2:1:6",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "11",
+                            "elo": 11,
+                            "first_name": "11",
+                            "id_player": "11",
+                            "last_name": "11",
+                            "matches_passed": [
+                                "2:3"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "11",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 0.0,
+                        "player_b": {
+                            "birthday": "3",
+                            "elo": 3,
+                            "first_name": "3",
+                            "id_player": "3",
+                            "last_name": "3",
+                            "matches_passed": [
+                                "2:11"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "3",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 1.0
+                    },
+                    {
+                        "id_match": "2:1:7",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "10",
+                            "elo": 10,
+                            "first_name": "10",
+                            "id_player": "10",
+                            "last_name": "10",
+                            "matches_passed": [
+                                "2:2"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "10",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 0.0,
+                        "player_b": {
+                            "birthday": "2",
+                            "elo": 2,
+                            "first_name": "2",
+                            "id_player": "2",
+                            "last_name": "2",
+                            "matches_passed": [
+                                "2:10"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "2",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 1.0
+                    },
+                    {
+                        "id_match": "2:1:8",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "9",
+                            "elo": 9,
+                            "first_name": "9",
+                            "id_player": "9",
+                            "last_name": "9",
+                            "matches_passed": [
+                                "2:1"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "9",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": 0.0,
+                        "player_b": {
+                            "birthday": "1",
+                            "elo": 1,
+                            "first_name": "1",
+                            "id_player": "1",
+                            "last_name": "1",
+                            "matches_passed": [
+                                "2:9"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "1",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": 1.0
+                    }
+                ],
+                "name_round": "Round 1"
+            },
+            "2:2": {
+                "begin_time": "20:25:53 - 03/Apr/2021",
+                "end_time": "20:45:53 - 03/Apr/2021",
+                "id_round": "2:2",
+                "matches": [
+                    {
+                        "id_match": "2:2:1",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "16",
+                            "elo": 16,
+                            "first_name": "16",
+                            "id_player": "1516",
+                            "last_name": "16",
+                            "matches_passed": [
+                                "2:8"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "16",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "15",
+                            "elo": 15,
+                            "first_name": "15",
+                            "id_player": "15",
+                            "last_name": "15",
+                            "matches_passed": [
+                                "2:7"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "15",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:2",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "14",
+                            "elo": 14,
+                            "first_name": "14",
+                            "id_player": "14",
+                            "last_name": "14",
+                            "matches_passed": [
+                                "2:6"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "14",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "12",
+                            "elo": 12,
+                            "first_name": "12",
+                            "id_player": "12",
+                            "last_name": "12",
+                            "matches_passed": [
+                                "2:4"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "12",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:3",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "5",
+                            "elo": 5,
+                            "first_name": "5",
+                            "id_player": "5",
+                            "last_name": "5",
+                            "matches_passed": [
+                                "2:13"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "5",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "3",
+                            "elo": 3,
+                            "first_name": "3",
+                            "id_player": "3",
+                            "last_name": "3",
+                            "matches_passed": [
+                                "2:11"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "3",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:4",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "2",
+                            "elo": 2,
+                            "first_name": "2",
+                            "id_player": "2",
+                            "last_name": "2",
+                            "matches_passed": [
+                                "2:10"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "2",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "1",
+                            "elo": 1,
+                            "first_name": "1",
+                            "id_player": "1",
+                            "last_name": "1",
+                            "matches_passed": [
+                                "2:9"
+                            ],
+                            "points": {
+                                "2": 1.0
+                            },
+                            "score": 1,
+                            "sex": "1",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:5",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "13",
+                            "elo": 13,
+                            "first_name": "13",
+                            "id_player": "13",
+                            "last_name": "13",
+                            "matches_passed": [
+                                "2:5"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "13",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "11",
+                            "elo": 11,
+                            "first_name": "11",
+                            "id_player": "11",
+                            "last_name": "11",
+                            "matches_passed": [
+                                "2:3"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "11",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:6",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "10",
+                            "elo": 10,
+                            "first_name": "10",
+                            "id_player": "10",
+                            "last_name": "10",
+                            "matches_passed": [
+                                "2:2"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "10",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "9",
+                            "elo": 9,
+                            "first_name": "9",
+                            "id_player": "9",
+                            "last_name": "9",
+                            "matches_passed": [
+                                "2:1"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "9",
+                            "tournaments_played": [
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:7",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "8",
+                            "elo": 8,
+                            "first_name": "8",
+                            "id_player": "8",
+                            "last_name": "8",
+                            "matches_passed": [
+                                "2:1516"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "8",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "7",
+                            "elo": 7,
+                            "first_name": "7",
+                            "id_player": "7",
+                            "last_name": "7",
+                            "matches_passed": [
+                                "2:15"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "7",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    },
+                    {
+                        "id_match": "2:2:8",
+                        "match_in_progress": "...",
+                        "player_a": {
+                            "birthday": "6",
+                            "elo": 6,
+                            "first_name": "6",
+                            "id_player": "6",
+                            "last_name": "6",
+                            "matches_passed": [
+                                "2:14"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "6",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_a_score": "...",
+                        "player_b": {
+                            "birthday": "4",
+                            "elo": 4,
+                            "first_name": "4",
+                            "id_player": "4",
+                            "last_name": "4",
+                            "matches_passed": [
+                                "2:12"
+                            ],
+                            "points": {},
+                            "score": 0,
+                            "sex": "4",
+                            "tournaments_played": [
+                                "1",
+                                "2"
+                            ]
+                        },
+                        "player_b_score": "..."
+                    }
+                ],
+                "name_round": "Round 2"
             }
         }
     },
@@ -420,12 +1980,17 @@
                         "first_name": "1",
                         "id_player": "1",
                         "last_name": "1",
-                        "matches_passed": [],
-                        "points": {},
-                        "score": 0,
+                        "matches_passed": [
+                            "2:9"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
                         "sex": "1",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -434,12 +1999,17 @@
                         "first_name": "2",
                         "id_player": "2",
                         "last_name": "2",
-                        "matches_passed": [],
-                        "points": {},
-                        "score": 0,
+                        "matches_passed": [
+                            "2:10"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
                         "sex": "2",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -448,12 +2018,17 @@
                         "first_name": "3",
                         "id_player": "3",
                         "last_name": "3",
-                        "matches_passed": [],
-                        "points": {},
-                        "score": 0,
+                        "matches_passed": [
+                            "2:11"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
                         "sex": "3",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -462,12 +2037,15 @@
                         "first_name": "4",
                         "id_player": "4",
                         "last_name": "4",
-                        "matches_passed": [],
+                        "matches_passed": [
+                            "2:12"
+                        ],
                         "points": {},
                         "score": 0,
                         "sex": "4",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -476,12 +2054,17 @@
                         "first_name": "5",
                         "id_player": "5",
                         "last_name": "5",
-                        "matches_passed": [],
-                        "points": {},
-                        "score": 0,
+                        "matches_passed": [
+                            "2:13"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
                         "sex": "5",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -490,12 +2073,15 @@
                         "first_name": "6",
                         "id_player": "6",
                         "last_name": "6",
-                        "matches_passed": [],
+                        "matches_passed": [
+                            "2:14"
+                        ],
                         "points": {},
                         "score": 0,
                         "sex": "6",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -504,12 +2090,15 @@
                         "first_name": "7",
                         "id_player": "7",
                         "last_name": "7",
-                        "matches_passed": [],
+                        "matches_passed": [
+                            "2:15"
+                        ],
                         "points": {},
                         "score": 0,
                         "sex": "7",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     },
                     {
@@ -518,12 +2107,15 @@
                         "first_name": "8",
                         "id_player": "8",
                         "last_name": "8",
-                        "matches_passed": [],
+                        "matches_passed": [
+                            "2:1516"
+                        ],
                         "points": {},
                         "score": 0,
                         "sex": "8",
                         "tournaments_played": [
-                            "1"
+                            "1",
+                            "2"
                         ]
                     }
                 ],
@@ -542,12 +2134,15 @@
                                     "first_name": "8",
                                     "id_player": "8",
                                     "last_name": "8",
-                                    "matches_passed": [],
+                                    "matches_passed": [
+                                        "2:1516"
+                                    ],
                                     "points": {},
                                     "score": 0,
                                     "sex": "8",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_a_score": "...",
@@ -557,12 +2152,15 @@
                                     "first_name": "4",
                                     "id_player": "4",
                                     "last_name": "4",
-                                    "matches_passed": [],
+                                    "matches_passed": [
+                                        "2:12"
+                                    ],
                                     "points": {},
                                     "score": 0,
                                     "sex": "4",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_b_score": "..."
@@ -576,12 +2174,15 @@
                                     "first_name": "7",
                                     "id_player": "7",
                                     "last_name": "7",
-                                    "matches_passed": [],
+                                    "matches_passed": [
+                                        "2:15"
+                                    ],
                                     "points": {},
                                     "score": 0,
                                     "sex": "7",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_a_score": "...",
@@ -591,12 +2192,17 @@
                                     "first_name": "3",
                                     "id_player": "3",
                                     "last_name": "3",
-                                    "matches_passed": [],
-                                    "points": {},
-                                    "score": 0,
+                                    "matches_passed": [
+                                        "2:11"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
                                     "sex": "3",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_b_score": "..."
@@ -610,12 +2216,15 @@
                                     "first_name": "6",
                                     "id_player": "6",
                                     "last_name": "6",
-                                    "matches_passed": [],
+                                    "matches_passed": [
+                                        "2:14"
+                                    ],
                                     "points": {},
                                     "score": 0,
                                     "sex": "6",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_a_score": "...",
@@ -625,12 +2234,17 @@
                                     "first_name": "2",
                                     "id_player": "2",
                                     "last_name": "2",
-                                    "matches_passed": [],
-                                    "points": {},
-                                    "score": 0,
+                                    "matches_passed": [
+                                        "2:10"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
                                     "sex": "2",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_b_score": "..."
@@ -644,12 +2258,17 @@
                                     "first_name": "5",
                                     "id_player": "5",
                                     "last_name": "5",
-                                    "matches_passed": [],
-                                    "points": {},
-                                    "score": 0,
+                                    "matches_passed": [
+                                        "2:13"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
                                     "sex": "5",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_a_score": "...",
@@ -659,12 +2278,17 @@
                                     "first_name": "1",
                                     "id_player": "1",
                                     "last_name": "1",
-                                    "matches_passed": [],
-                                    "points": {},
-                                    "score": 0,
+                                    "matches_passed": [
+                                        "2:9"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
                                     "sex": "1",
                                     "tournaments_played": [
-                                        "1"
+                                        "1",
+                                        "2"
                                     ]
                                 },
                                 "player_b_score": "..."
@@ -674,6 +2298,973 @@
                     }
                 ],
                 "time_control": 10,
+                "tournament_open": true
+            },
+            "2": {
+                "date": "01/01/2001",
+                "description": "zremioug\u00c3\u00a9r\"huimbf",
+                "id_tournament": "2",
+                "name_tournament": "uhef",
+                "number_players": 16,
+                "number_rounds": 5,
+                "place": "zegjn",
+                "players": [
+                    {
+                        "birthday": "1",
+                        "elo": 1,
+                        "first_name": "1",
+                        "id_player": "1",
+                        "last_name": "1",
+                        "matches_passed": [
+                            "2:9"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "1",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "2",
+                        "elo": 2,
+                        "first_name": "2",
+                        "id_player": "2",
+                        "last_name": "2",
+                        "matches_passed": [
+                            "2:10"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "2",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "3",
+                        "elo": 3,
+                        "first_name": "3",
+                        "id_player": "3",
+                        "last_name": "3",
+                        "matches_passed": [
+                            "2:11"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "3",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "4",
+                        "elo": 4,
+                        "first_name": "4",
+                        "id_player": "4",
+                        "last_name": "4",
+                        "matches_passed": [
+                            "2:12"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "4",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "5",
+                        "elo": 5,
+                        "first_name": "5",
+                        "id_player": "5",
+                        "last_name": "5",
+                        "matches_passed": [
+                            "2:13"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "5",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "6",
+                        "elo": 6,
+                        "first_name": "6",
+                        "id_player": "6",
+                        "last_name": "6",
+                        "matches_passed": [
+                            "2:14"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "6",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "7",
+                        "elo": 7,
+                        "first_name": "7",
+                        "id_player": "7",
+                        "last_name": "7",
+                        "matches_passed": [
+                            "2:15"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "7",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "8",
+                        "elo": 8,
+                        "first_name": "8",
+                        "id_player": "8",
+                        "last_name": "8",
+                        "matches_passed": [
+                            "2:1516"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "8",
+                        "tournaments_played": [
+                            "1",
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "9",
+                        "elo": 9,
+                        "first_name": "9",
+                        "id_player": "9",
+                        "last_name": "9",
+                        "matches_passed": [
+                            "2:1"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "9",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "10",
+                        "elo": 10,
+                        "first_name": "10",
+                        "id_player": "10",
+                        "last_name": "10",
+                        "matches_passed": [
+                            "2:2"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "10",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "11",
+                        "elo": 11,
+                        "first_name": "11",
+                        "id_player": "11",
+                        "last_name": "11",
+                        "matches_passed": [
+                            "2:3"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "11",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "12",
+                        "elo": 12,
+                        "first_name": "12",
+                        "id_player": "12",
+                        "last_name": "12",
+                        "matches_passed": [
+                            "2:4"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "12",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "13",
+                        "elo": 13,
+                        "first_name": "13",
+                        "id_player": "13",
+                        "last_name": "13",
+                        "matches_passed": [
+                            "2:5"
+                        ],
+                        "points": {},
+                        "score": 0,
+                        "sex": "13",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "14",
+                        "elo": 14,
+                        "first_name": "14",
+                        "id_player": "14",
+                        "last_name": "14",
+                        "matches_passed": [
+                            "2:6"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "14",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "15",
+                        "elo": 15,
+                        "first_name": "15",
+                        "id_player": "15",
+                        "last_name": "15",
+                        "matches_passed": [
+                            "2:7"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "15",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    },
+                    {
+                        "birthday": "16",
+                        "elo": 16,
+                        "first_name": "16",
+                        "id_player": "1516",
+                        "last_name": "16",
+                        "matches_passed": [
+                            "2:8"
+                        ],
+                        "points": {
+                            "2": 1.0
+                        },
+                        "score": 1,
+                        "sex": "16",
+                        "tournaments_played": [
+                            "2"
+                        ]
+                    }
+                ],
+                "rounds": [
+                    {
+                        "begin_time": "20:24:00 - 03/Apr/2021",
+                        "end_time": "20:44:00 - 03/Apr/2021",
+                        "id_round": "2:1",
+                        "matches": [
+                            {
+                                "id_match": "2:1:1",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "16",
+                                    "elo": 16,
+                                    "first_name": "16",
+                                    "id_player": "1516",
+                                    "last_name": "16",
+                                    "matches_passed": [
+                                        "2:8"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "16",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 1.0,
+                                "player_b": {
+                                    "birthday": "8",
+                                    "elo": 8,
+                                    "first_name": "8",
+                                    "id_player": "8",
+                                    "last_name": "8",
+                                    "matches_passed": [
+                                        "2:1516"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "8",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 0.0
+                            },
+                            {
+                                "id_match": "2:1:2",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "15",
+                                    "elo": 15,
+                                    "first_name": "15",
+                                    "id_player": "15",
+                                    "last_name": "15",
+                                    "matches_passed": [
+                                        "2:7"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "15",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 1.0,
+                                "player_b": {
+                                    "birthday": "7",
+                                    "elo": 7,
+                                    "first_name": "7",
+                                    "id_player": "7",
+                                    "last_name": "7",
+                                    "matches_passed": [
+                                        "2:15"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "7",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 0.0
+                            },
+                            {
+                                "id_match": "2:1:3",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "14",
+                                    "elo": 14,
+                                    "first_name": "14",
+                                    "id_player": "14",
+                                    "last_name": "14",
+                                    "matches_passed": [
+                                        "2:6"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "14",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 1.0,
+                                "player_b": {
+                                    "birthday": "6",
+                                    "elo": 6,
+                                    "first_name": "6",
+                                    "id_player": "6",
+                                    "last_name": "6",
+                                    "matches_passed": [
+                                        "2:14"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "6",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 0.0
+                            },
+                            {
+                                "id_match": "2:1:4",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "13",
+                                    "elo": 13,
+                                    "first_name": "13",
+                                    "id_player": "13",
+                                    "last_name": "13",
+                                    "matches_passed": [
+                                        "2:5"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "13",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 0.0,
+                                "player_b": {
+                                    "birthday": "5",
+                                    "elo": 5,
+                                    "first_name": "5",
+                                    "id_player": "5",
+                                    "last_name": "5",
+                                    "matches_passed": [
+                                        "2:13"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "5",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 1.0
+                            },
+                            {
+                                "id_match": "2:1:5",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "12",
+                                    "elo": 12,
+                                    "first_name": "12",
+                                    "id_player": "12",
+                                    "last_name": "12",
+                                    "matches_passed": [
+                                        "2:4"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "12",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 1.0,
+                                "player_b": {
+                                    "birthday": "4",
+                                    "elo": 4,
+                                    "first_name": "4",
+                                    "id_player": "4",
+                                    "last_name": "4",
+                                    "matches_passed": [
+                                        "2:12"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "4",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 0.0
+                            },
+                            {
+                                "id_match": "2:1:6",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "11",
+                                    "elo": 11,
+                                    "first_name": "11",
+                                    "id_player": "11",
+                                    "last_name": "11",
+                                    "matches_passed": [
+                                        "2:3"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "11",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 0.0,
+                                "player_b": {
+                                    "birthday": "3",
+                                    "elo": 3,
+                                    "first_name": "3",
+                                    "id_player": "3",
+                                    "last_name": "3",
+                                    "matches_passed": [
+                                        "2:11"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "3",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 1.0
+                            },
+                            {
+                                "id_match": "2:1:7",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "10",
+                                    "elo": 10,
+                                    "first_name": "10",
+                                    "id_player": "10",
+                                    "last_name": "10",
+                                    "matches_passed": [
+                                        "2:2"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "10",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 0.0,
+                                "player_b": {
+                                    "birthday": "2",
+                                    "elo": 2,
+                                    "first_name": "2",
+                                    "id_player": "2",
+                                    "last_name": "2",
+                                    "matches_passed": [
+                                        "2:10"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "2",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 1.0
+                            },
+                            {
+                                "id_match": "2:1:8",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "9",
+                                    "elo": 9,
+                                    "first_name": "9",
+                                    "id_player": "9",
+                                    "last_name": "9",
+                                    "matches_passed": [
+                                        "2:1"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "9",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": 0.0,
+                                "player_b": {
+                                    "birthday": "1",
+                                    "elo": 1,
+                                    "first_name": "1",
+                                    "id_player": "1",
+                                    "last_name": "1",
+                                    "matches_passed": [
+                                        "2:9"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "1",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": 1.0
+                            }
+                        ],
+                        "name_round": "Round 1"
+                    },
+                    {
+                        "begin_time": "20:25:53 - 03/Apr/2021",
+                        "end_time": "20:45:53 - 03/Apr/2021",
+                        "id_round": "2:2",
+                        "matches": [
+                            {
+                                "id_match": "2:2:1",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "16",
+                                    "elo": 16,
+                                    "first_name": "16",
+                                    "id_player": "1516",
+                                    "last_name": "16",
+                                    "matches_passed": [
+                                        "2:8"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "16",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "15",
+                                    "elo": 15,
+                                    "first_name": "15",
+                                    "id_player": "15",
+                                    "last_name": "15",
+                                    "matches_passed": [
+                                        "2:7"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "15",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:2",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "14",
+                                    "elo": 14,
+                                    "first_name": "14",
+                                    "id_player": "14",
+                                    "last_name": "14",
+                                    "matches_passed": [
+                                        "2:6"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "14",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "12",
+                                    "elo": 12,
+                                    "first_name": "12",
+                                    "id_player": "12",
+                                    "last_name": "12",
+                                    "matches_passed": [
+                                        "2:4"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "12",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:3",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "5",
+                                    "elo": 5,
+                                    "first_name": "5",
+                                    "id_player": "5",
+                                    "last_name": "5",
+                                    "matches_passed": [
+                                        "2:13"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "5",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "3",
+                                    "elo": 3,
+                                    "first_name": "3",
+                                    "id_player": "3",
+                                    "last_name": "3",
+                                    "matches_passed": [
+                                        "2:11"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "3",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:4",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "2",
+                                    "elo": 2,
+                                    "first_name": "2",
+                                    "id_player": "2",
+                                    "last_name": "2",
+                                    "matches_passed": [
+                                        "2:10"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "2",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "1",
+                                    "elo": 1,
+                                    "first_name": "1",
+                                    "id_player": "1",
+                                    "last_name": "1",
+                                    "matches_passed": [
+                                        "2:9"
+                                    ],
+                                    "points": {
+                                        "2": 1.0
+                                    },
+                                    "score": 1,
+                                    "sex": "1",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:5",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "13",
+                                    "elo": 13,
+                                    "first_name": "13",
+                                    "id_player": "13",
+                                    "last_name": "13",
+                                    "matches_passed": [
+                                        "2:5"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "13",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "11",
+                                    "elo": 11,
+                                    "first_name": "11",
+                                    "id_player": "11",
+                                    "last_name": "11",
+                                    "matches_passed": [
+                                        "2:3"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "11",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:6",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "10",
+                                    "elo": 10,
+                                    "first_name": "10",
+                                    "id_player": "10",
+                                    "last_name": "10",
+                                    "matches_passed": [
+                                        "2:2"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "10",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "9",
+                                    "elo": 9,
+                                    "first_name": "9",
+                                    "id_player": "9",
+                                    "last_name": "9",
+                                    "matches_passed": [
+                                        "2:1"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "9",
+                                    "tournaments_played": [
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:7",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "8",
+                                    "elo": 8,
+                                    "first_name": "8",
+                                    "id_player": "8",
+                                    "last_name": "8",
+                                    "matches_passed": [
+                                        "2:1516"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "8",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "7",
+                                    "elo": 7,
+                                    "first_name": "7",
+                                    "id_player": "7",
+                                    "last_name": "7",
+                                    "matches_passed": [
+                                        "2:15"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "7",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            },
+                            {
+                                "id_match": "2:2:8",
+                                "match_in_progress": "...",
+                                "player_a": {
+                                    "birthday": "6",
+                                    "elo": 6,
+                                    "first_name": "6",
+                                    "id_player": "6",
+                                    "last_name": "6",
+                                    "matches_passed": [
+                                        "2:14"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "6",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_a_score": "...",
+                                "player_b": {
+                                    "birthday": "4",
+                                    "elo": 4,
+                                    "first_name": "4",
+                                    "id_player": "4",
+                                    "last_name": "4",
+                                    "matches_passed": [
+                                        "2:12"
+                                    ],
+                                    "points": {},
+                                    "score": 0,
+                                    "sex": "4",
+                                    "tournaments_played": [
+                                        "1",
+                                        "2"
+                                    ]
+                                },
+                                "player_b_score": "..."
+                            }
+                        ],
+                        "name_round": "Round 2"
+                    }
+                ],
+                "time_control": 20,
                 "tournament_open": true
             }
         }

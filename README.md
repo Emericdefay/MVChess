@@ -43,10 +43,7 @@ python main.py
 ```
 ## How to use
 #### 1. Help
-There are several commands available in this program, at any time you can check them by typing :
-```
-commands
-```
+There are several commands available in this program, you can checkout them at the end of this guide.
 #### 2. Basics usage
 Basically, few commands are needed to manage a tournament.
 First, you need to create a tournament. So use :
@@ -145,12 +142,6 @@ get match
 The -all flag will allow you to see every matches from a round.
 
 #### 4. Other commands
-###### Flake8 Report
-You can get a flake8 report by typing:
-```
-get flake-report
-```
-The report folder will be stored at /MVChess named : "flake8_rapport".
 ###### Exit the program
 If you want to exit softly, you can type:
 ```
@@ -180,9 +171,7 @@ get round
 get match -all
 get match
 
-commands
 load
-get flake-report
 exit
 ```
 

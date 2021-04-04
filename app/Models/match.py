@@ -155,7 +155,7 @@ class Match:
     @classmethod
     def get_from_round(cls, id_round: str):
         """
-        Get all matches from a round of a tournament. Giving the Id of the round.
+        Get all matches from a round of a tournament. Giving the ID of the round.
 
         Arg:
             * *id_round* (str) : ID of the round. i.e: "1:1"

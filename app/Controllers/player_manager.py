@@ -12,17 +12,16 @@ class PlayerManager:
         """
         Initialize the PlayerManager
         """
-        self.test = False
         pass
 
     @staticmethod
     def give_points(id_player: str, id_tournament: str, points: float):
         """
-        Give points to a player
+        Give points to a player in a specific tournament.
 
         Args:
             * *id_player* (str): ID of the player
-            * *points* (float):
+            * *points* (float): Points given to the player
         """
         player = Player.get(id_player)
         if player:
@@ -41,27 +40,19 @@ class PlayerManager:
 
         player.set_elo(int(elo))
 
-    def create_player(self, id_player: str):
+    @staticmethod
+    def create_player(id_player: str):
         """
         Create a new player
 
             * *id_player* (str): ID of the player created
         """
-        if self.test:
-            random_id = id_player
-            id_player = f"{random_id}"
-            last_name = f"Last{random_id}"
-            first_name = f"First{random_id}"
-            birthday = f"B{random_id}"
-            sex = "Male"
-            elo = randint(0, 1000)
-        else:
-            id_player = str(id_player)
-            last_name = input("Last name of the player : ")
-            first_name = input("First name of the player : ")
-            birthday = input("Birthday of the player : ")
-            sex = input("Sex of the player : ")
-            elo = int(input("Elo of the player: "))
+        id_player = str(id_player)
+        last_name = input("Last name of the player : ")
+        first_name = input("First name of the player : ")
+        birthday = input("Birthday of the player : ")
+        sex = input("Sex of the player : ")
+        elo = int(input("Elo of the player: "))
 
         if not Player.get(id_player):
             Player(id_player, last_name, first_name, birthday, sex, elo)

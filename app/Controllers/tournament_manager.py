@@ -16,9 +16,10 @@ class TournamentManager:
         """
         Initialize an instance of Tournament.
         """
-        self.test = False
+        pass
 
-    def create_tournament(self, id_tournament: str):
+    @staticmethod
+    def create_tournament(id_tournament: str):
         """
         Create a new tournament.
 
@@ -26,35 +27,20 @@ class TournamentManager:
             * *id_tournament* (str): ID of the **new** tournament
         """
         if not Tournament.get(id_tournament):
-            if self.test:
-                name_tournament = f"Tournament {id_tournament}"
-                number_day_tournament = randint(1, 3)
-                place_tournament = "TestCity"
-                dates_tournaments = []
-                for i in range(number_day_tournament):
-                    day = f"{randint(1, 31)}/{randint(1, 12)}/2021"
-                    dates_tournaments.append(day)
-                dates_tournaments = " - ".join(map(str, dates_tournaments))
-                number_players = 8
-                number_rounds = 4
-                time_control = 20
-                description = "Best Tournament's Description Ever."
-
-            else:
-                name_tournament = input("Name the tournament : ")
-                place_tournament = str(input("Where does the tournament happen : "))
-                number_day_tournament = int(input("How many days will last the tournament : "))
-                dates_tournaments = []
-                for i in range(number_day_tournament):
-                    day = input(f"Date n°{i} : ")
-                    dates_tournaments.append(day)
-                dates_tournaments = " - ".join(map(str, dates_tournaments))
-                number_players = input("How many players : ")
-                advised_round = 4
-                number_rounds = input(f"How many rounds (by default: {advised_round}) : ")
-                number_rounds = number_rounds if number_rounds != "" else advised_round
-                time_control = input("How long will last matches (in minutes) : ")
-                description = input("Enter the description of the tournament : ")
+            name_tournament = input("Name the tournament : ")
+            place_tournament = str(input("Where does the tournament happen : "))
+            number_day_tournament = int(input("How many days will last the tournament : "))
+            dates_tournaments = []
+            for i in range(number_day_tournament):
+                day = input(f"Date n°{i} : ")
+                dates_tournaments.append(day)
+            dates_tournaments = " - ".join(map(str, dates_tournaments))
+            number_players = int(input("How many players : "))
+            advised_round = 4
+            number_rounds = input(f"How many rounds (by default: {advised_round}) : ")
+            number_rounds = number_rounds if number_rounds != "" else advised_round
+            time_control = int(input("How long will last matches (in minutes) : "))
+            description = input("Enter the description of the tournament : ")
 
             Tournament(id_tournament,
                        name_tournament,
@@ -64,11 +50,13 @@ class TournamentManager:
                        number_rounds,
                        time_control,
                        description)
+            return True
         else:
-            print("The ID given is already taken. If you paused the creation it will resume."
-                  " Else, please enter another ID.")
+            print("The ID given is already taken.")
+            return False
 
-    def add_players(self, id_tournament: str):
+    @staticmethod
+    def add_players(id_tournament: str):
         """
         Add players (new or not) to the tournament.
 
@@ -77,46 +65,32 @@ class TournamentManager:
         """
         tournament = Tournament.get(id_tournament)
         if tournament and not tournament.rounds:
-            if self.test:
-                tournament = Tournament.get(id_tournament)
-                list_players = []
-                for i in range(tournament.number_players):
-                    id_player = str(randint(0, 10000))
-                    if Player.get(id_player):
-                        list_players.append(Player.get(id_player))
-                    else:
-                        PlayerManager().create_player(id_player)
-                        list_players.append(Player.get(id_player))
-                tournament.set_players(list_players)
-                for player in list_players:
-                    player.tournaments_played.append(id_tournament)
-            else:
-                tournament = Tournament.get(id_tournament)
-                list_players = []
-                for i in range(tournament.number_players):
+            tournament = Tournament.get(id_tournament)
+            list_players = []
+            for i in range(tournament.number_players):
+                id_player = input(f"Tournament : {tournament.name_tournament},"
+                                  f" player {i + 1}/{tournament.number_players}\n"
+                                  f"Give the ID of the player that'll play. "
+                                  f"If it's a new player, please give an unique"
+                                  f"ID to register him : ")
+                if Player.get(id_player) in list_players:
+                    print("This player is already playing this tournament! Please retry : ")
                     id_player = input(f"Tournament : {tournament.name_tournament},"
                                       f" player {i + 1}/{tournament.number_players}\n"
                                       f"Give the ID of the player that'll play. "
                                       f"If it's a new player, please give an unique"
                                       f"ID to register him : ")
-                    if Player.get(id_player) in list_players:
-                        print("This player is already playing this tournament! Please retry : ")
-                        id_player = input(f"Tournament : {tournament.name_tournament},"
-                                          f" player {i + 1}/{tournament.number_players}\n"
-                                          f"Give the ID of the player that'll play. "
-                                          f"If it's a new player, please give an unique"
-                                          f"ID to register him : ")
-                    if Player.get(id_player) and Player.get(id_player) not in list_players:
-                        list_players.append(Player.get(id_player))
-                    elif Player.get(id_player) in list_players:
-                        raise ("A player has been recorded twice for the same tournament two time in a raw."
-                               "Please recreate the same tournament and add 8 different players; ")
-                    else:
-                        PlayerManager().create_player(id_player)
-                        list_players.append(Player.get(id_player))
-                tournament.set_players(list_players)
-                for player in list_players:
-                    player.tournaments_played.append(id_tournament)
+                if Player.get(id_player) and Player.get(id_player) not in list_players:
+                    list_players.append(Player.get(id_player))
+                elif Player.get(id_player) in list_players:
+                    raise ("A player has been recorded twice for the same tournament two time in a raw."
+                           "Please recreate the same tournament and add 8 different players; ")
+                else:
+                    PlayerManager().create_player(id_player)
+                    list_players.append(Player.get(id_player))
+            tournament.set_players(list_players)
+            for player in list_players:
+                player.tournaments_played.append(id_tournament)
         else:
             raise Exception(f"Tournament ID : {id_tournament} does not exist.")
 
