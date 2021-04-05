@@ -1,4 +1,4 @@
-# Librairies
+# Libraries
 from tinydb import TinyDB
 
 
@@ -64,10 +64,6 @@ class Player:
         self.score = int(kwargs["score"]) if len(kwargs) > 3 else 0
 
         self.update()
-
-    def __repr__(self):
-        """debug"""
-        return f"{self.id_player} - {self.matches_passed}"
 
     def __str__(self):
         """

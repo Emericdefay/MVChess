@@ -29,8 +29,8 @@ class RoundManager:
         """
         id_tournament = id_round.split(":")[0]
         tournament = Tournament.get(id_tournament)
-        
-        if tournament.tournament_open and len(tournament.rounds) >= tournament.number_rounds:
+
+        if tournament.tournament_open and len(tournament.rounds) < tournament.number_rounds:
             if not Round.get(id_round):
                 times = self.get_times(id_tournament)
 
@@ -78,26 +78,6 @@ class RoundManager:
                 pairs.append([player_a, player_b])
             return pairs
         else:
-            # OLD
-            """
-            target = offset
-            for i in range(number_matches):
-                player_a = players.pop(0)
-                player_b = None
-                for j in range(target, len(players)):
-                    if f"{id_tournament}:{player_a.id_player}" in players[j].matches_passed:
-                        if len(players) >= 2:
-                            offset += 1
-                            return self.create_pairs(id_tournament, offset)
-                        if offset > len(players):
-                            player_b = players.pop()
-                    else:
-                        player_b = players.pop(j)
-                        break
-                target = 0
-                pairs.append([player_a, player_b])
-            """
-            # NEW
             tables = [[] for _ in range(number_matches)]
             number_first_tables = (number_matches//2) + 1 if number_matches % 2 else number_matches//2
             # Create subdivisions
@@ -129,7 +109,7 @@ class RoundManager:
             target = last_tables[0]
             len_players_last = len(players_last)
             for _ in range(len_players_last):
-                player = players_last.pop(offset_last) if len(players_last) >= offset_last else players_last.pop(-1)
+                player = players_last.pop(offset_last) if offset_last < len(players_last) else players_last.pop(-1)
                 tables[target].append(player)
                 if len(tables[target]) >= 2:
                     player_a = tables[target][0]
@@ -155,7 +135,12 @@ class RoundManager:
         for match in single_round.matches:
             id_match = match.id_match
             dict_result = {"0": -1, "1": match.player_a.id_player, "2": match.player_b.id_player}
-            winner = input(f"Match {id_match} | Winner is P1 or P2? (Type 1 for P1, 2 for P2 and 0 if equality) : ")
+            winner = input(f"Match {id_match} | Winner "
+                           f"is {match.player_a.first_name} "
+                           f"or {match.player_b.first_name}?"
+                           f" (Type 1 for {match.player_a.first_name},"
+                           f" 2 for {match.player_b.first_name}"
+                           f" and 0 if equality) : ")
 
             if match.player_a_score == match.match_in_progress and match.player_b_score == match.match_in_progress:
                 MatchManager().set_winner(id_match, dict_result[winner])

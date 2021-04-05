@@ -1,6 +1,5 @@
 # Libraries
 import sys
-import os
 from operator import attrgetter
 # Modules
 from app.Controllers import TournamentManager

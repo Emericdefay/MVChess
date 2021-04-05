@@ -30,7 +30,7 @@ To activate it, type at /MVChess :
 source env/scripts/activate
 ```
 #### 3. Libraries
-TinyDB is requisite to use this program. To install it, type:
+TinyDB and Flake8 libraries are requisite to use this program. To install it, type:
 ```
 pip install -r requirements.txt
 ```
