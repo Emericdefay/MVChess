@@ -30,8 +30,6 @@ def start():
 
                 "load": Controller.load,
 
-                "get flake-report": Controller.get_flake_report,
-                "commands": Controller.list_commands,
                 "exit": Controller.close_app
                 }
 
@@ -41,7 +39,9 @@ def start():
 
     while True:
         instruction = str(input("ChessManager >>> "))
+        commands[instruction]()
         try:
-            commands[instruction]()
+            # commands[instruction]()
+            pass
         except KeyError:
             print("Wrong Command.")

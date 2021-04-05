@@ -29,8 +29,8 @@ class RoundManager:
         """
         id_tournament = id_round.split(":")[0]
         tournament = Tournament.get(id_tournament)
-
-        if tournament.tournament_open or len(tournament.rounds) >= tournament.number_rounds:
+        
+        if tournament.tournament_open and len(tournament.rounds) >= tournament.number_rounds:
             if not Round.get(id_round):
                 times = self.get_times(id_tournament)
 
@@ -55,7 +55,7 @@ class RoundManager:
         else:
             print("The tournament has already reach his maximum rounds number.")
 
-    def create_pairs(self, id_tournament: str, offset=0):
+    def create_pairs(self, id_tournament: str, offset_first=0, offset_last=0):
         """
         Create pairs of players that'll play against each other for the next round.
 
@@ -78,6 +78,8 @@ class RoundManager:
                 pairs.append([player_a, player_b])
             return pairs
         else:
+            # OLD
+            """
             target = offset
             for i in range(number_matches):
                 player_a = players.pop(0)
@@ -94,6 +96,51 @@ class RoundManager:
                         break
                 target = 0
                 pairs.append([player_a, player_b])
+            """
+            # NEW
+            tables = [[] for _ in range(number_matches)]
+            number_first_tables = (number_matches//2) + 1 if number_matches % 2 else number_matches//2
+            # Create subdivisions
+            first_tables = [i for i in range(number_first_tables)]
+            last_tables = [i for i in range(number_first_tables, number_matches)]
+            # Isolate firsts players of each subdivisions
+            last_tables_player = players.pop((last_tables[0]*2) + 1)
+            first_tables_player = players.pop(first_tables[0])
+            # Place firsts players in firsts tables of subdivisions
+            tables[first_tables[0]].append(first_tables_player)
+            tables[last_tables[0]].append(last_tables_player)
+            # List of each subdivisions' players
+            players_first = [player for player in players[:(number_first_tables*2)-1]]
+            players_last = [player for player in players[(number_first_tables*2)-1:]]
+
+            target = first_tables[0]
+            for _ in range(offset_first, len(players_first)+offset_first):
+                player = players_first.pop(offset_first) if len(players_first) > offset_first \
+                                                            else players_first.pop(-1)
+                tables[target].append(player)
+                if len(tables[target]) >= 2:
+                    player_a = tables[target][0]
+                    player_b = tables[target][1]
+                    if f"{id_tournament}:{player_a.id_player}" in player_b.matches_passed:
+                        offset_first += 1
+                        return self.create_pairs(id_tournament, offset_first, offset_last)
+                    else:
+                        target += 1
+            target = last_tables[0]
+            len_players_last = len(players_last)
+            for _ in range(len_players_last):
+                player = players_last.pop(offset_last) if len(players_last) >= offset_last else players_last.pop(-1)
+                tables[target].append(player)
+                if len(tables[target]) >= 2:
+                    player_a = tables[target][0]
+                    player_b = tables[target][1]
+                    if f"{id_tournament}:{player_a.id_player}" in player_b.matches_passed:
+                        offset_last += 1
+                        self.create_pairs(id_tournament, offset_first, offset_last)
+                    else:
+                        target += 1
+                if target >= number_matches:
+                    return tables
         return pairs
 
     @staticmethod

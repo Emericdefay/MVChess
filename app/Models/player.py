@@ -65,6 +65,10 @@ class Player:
 
         self.update()
 
+    def __repr__(self):
+        """debug"""
+        return f"{self.id_player} - {self.matches_passed}"
+
     def __str__(self):
         """
         Describe the player like this:
