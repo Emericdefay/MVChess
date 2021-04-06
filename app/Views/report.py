@@ -44,8 +44,8 @@ class Report:
                               "last_name": player.last_name,
                               "first_name": player.first_name})
 
-        sort_list = sorted(sort_list, key=itemgetter("first_name"), reverse=True)
-        sort_list = sorted(sort_list, key=itemgetter("last_name"), reverse=True)
+        sort_list = sorted(sort_list, key=itemgetter("first_name"), reverse=False)
+        sort_list = sorted(sort_list, key=itemgetter("last_name"), reverse=False)
 
         sorted_players = []
 

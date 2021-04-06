@@ -39,9 +39,7 @@ def start():
 
     while True:
         instruction = str(input("ChessManager >>> "))
-        commands[instruction]()
         try:
-            # commands[instruction]()
-            pass
+            commands[instruction]()
         except KeyError:
             print("Wrong Command.")
