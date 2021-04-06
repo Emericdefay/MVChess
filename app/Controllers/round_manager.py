@@ -78,6 +78,7 @@ class RoundManager:
                 pairs.append([player_a, player_b])
             return pairs
         else:
+            # Not first round :
             tables = [[] for _ in range(number_matches)]
             number_first_tables = (number_matches//2) + 1 if number_matches % 2 else number_matches//2
             # Create subdivisions
@@ -94,9 +95,9 @@ class RoundManager:
             players_last = [player for player in players[(number_first_tables*2)-1:]]
 
             target = first_tables[0]
-            for _ in range(offset_first, len(players_first)+offset_first):
+            for _ in range(len(players_first)):
                 player = players_first.pop(offset_first) if len(players_first) > offset_first \
-                                                            else players_first.pop(-1)
+                                                            else players_first.pop(0)
                 tables[target].append(player)
                 if len(tables[target]) >= 2:
                     player_a = tables[target][0]
@@ -106,10 +107,12 @@ class RoundManager:
                         return self.create_pairs(id_tournament, offset_first, offset_last)
                     else:
                         target += 1
+
             target = last_tables[0]
             len_players_last = len(players_last)
             for _ in range(len_players_last):
-                player = players_last.pop(offset_last) if offset_last < len(players_last) else players_last.pop(-1)
+                player = players_last.pop(offset_last) if offset_last < len(players_last) \
+                                                        else players_last.pop(0)
                 tables[target].append(player)
                 if len(tables[target]) >= 2:
                     player_a = tables[target][0]
